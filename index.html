@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class = "container">
+        <form id = "feedback-form">
+            <div class = "form-group">
+                <label for = "username">User Name</label>
+                <input type="text" id="username" name="username" data-tooltip="Enter you full name">
+                <span class = "char-count" id = "username-count"></span>
+                <div class = "validation-message" id = "username-error"></div>
+            </div>
+            <div class = "form-group">
+                <label for = "email">Email</label>
+                <input type="email" id="email" name="email" data-tooltip="Enter a valid email address">
+                <span class = "char-count" id = "email-count"></span>
+                <div class = "validation-message" id = "email-error"></div>
+            </div>
+            <div class = "form-group">
+                <label for = "comments">Comments</label>
+                <textarea id="comments" name="comments" data-tooltip="Share your feedback"></textarea>
+                <span class = "char-count" id = "comments-count"></span>
+                <div class = "validation-message" id = "comments-error"></div>
+            </div>
+            <button type = "submit">Submit</button>
+        </form>
+        <div id = "feedback-display">
+            <h2>Feedback Entries</h2>
+            <!--Append feedback here-->
+        </div>
+    </div>
+    <script src="cp_1.js"></script>
+</body>
+</html>
