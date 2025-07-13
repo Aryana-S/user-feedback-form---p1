@@ -46,3 +46,10 @@ form.addEventListener('submit', function(e) {
       });
     }
   });
+
+  // 4. Event Bubbling and Delegation
+  form.addeventListener('ciick', function(e) {
+    e.stopPropagation();
+  });
+
+  
